@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 255);
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            margin-left: 15%;
+        }
+
+        img {
+            width: 95%;
+            margin: 5% 15%;
+        }
+
+        #logo {
+            width: 60%;
+        }
+        footer {
+            bottom: 0;
+            color: #949494;
+            text-align: center;
+            font-size: small;
+        }
+        .reg {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Align items in the center horizontally */
+            margin-right: 15%;
+        }
+
+        .regBox {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.262);
+            width: 50%;
+            max-width: 400px;
+            margin-top: 10%;
+            height: auto; /* Adjusted height */
+            padding: 3%;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input,
+        button {
+            width: calc(100% - 2 * 20px);
+            margin: 2% 6%;
+            border-radius: 5px;
+            padding: 3%;
+            border: 1px solid gainsboro;
+            box-sizing: border-box;
+            font-size: 70%;
+        }
+
+        button {
+            background-color: rgb(8, 148, 244);
+            color: white;
+        }
+
+        #or {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 2% 0;
+        }
+
+        #or hr {
+            flex: 1;
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+
+        #or p {
+            margin: 0;
+            color: #777;
+        }
+
+        #underBox {
+            display: flex;
+            flex-direction: column;
+            height: 15%;
+            text-align: center;
+            align-items: center;
+        }
+
+        a {
+            padding-top: 3%;
+        }
+
+        .regBox2 {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.262);
+            width: 54%;
+            max-width: 400px;
+            margin-top: 5%;
+            font-size: 75%;
+            padding-left: 2%;
+            
+        }
+
+        .reg img {
+            width: 58%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="main">
+            <div class="img">
+                <img src="imgInsta.png">
+            </div>
+            <div class="reg">
+                <div class="regBox">
+                    <form>
+                        <img id="logo" src="logoInsta.png">
+                        <input type="text" id="login" placeholder="Электронный адрес или номер" required>
+                        <input type="text" id="password" placeholder="Пароль" required>
+                        <button id="login">Войти</button>
+                    </form>
+                    <div id="or">
+                        <hr>
+                        <p>ИЛИ</p>
+                        <hr>
+                    </div>
+                    <div id="underBox">
+                        <a href="https://www.facebook.com/">Войти через Facebook</a>
+                        <a>Забыли Пароль?</a>
+                    </div>
+                </div>
+                <div class="regBox2">
+                    <p>У вас еще нет аккаунта?<a href="https://www.facebook.com/">Зарегистрироваться</a></p>
+                    
+                </div>
+                <img src="download.png">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p><span>Meta</span> <span>Информация</span> <span>Блог</span> <span>Вакансии</span> <span>Помощь</span>
+            <span>API</span> <span>Конфиденциальность</span> <span>Meta Verified</span> <span>Условия</span>
+            <span>Места</span> <span>Instagram Lite</span>
+        </p>
+        <br>
+        <p><span>Русский</span>
+            © 2024 Instagram from Meta</p>
+        <br><br>
+
+    </footer>
+</body>
+</html>

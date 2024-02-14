@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <style>
+        body {
+            background-color: rgba(240, 242, 245, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .root {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        footer {
+            background-color: white;
+            color: gray;
+        }
+
+        footer div {
+            font-size: 15px;
+            width: 70%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .greeting,
+        .reg {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: 20px;
+            max-width: 50%; /* Each box takes up 50% of the width */
+        }
+
+        .greeting {
+            padding-left: 10%;
+        }
+
+        #f {
+            font-size: 60px;
+            font-weight: 500;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #t {
+            font-size: 30px;
+            margin-top: -50px;
+        }
+
+        #txt {
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .regBox {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.262);
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 15%;
+        }
+
+        a {
+            color: rgb(114, 114, 234);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: calc(100% - 2 * 20px); /* Calculate width, considering padding */
+            margin: 10px 20px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid gainsboro;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        #login {
+            width: calc(100% - 2 * 20px);
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            border: 1px solid gainsboro;
+            background-color: rgb(114, 114, 234);
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #create {
+            color: white;
+            background-color: rgb(72, 188, 44);
+            padding: 14px;
+            border-radius: 10px;
+            border: 1px solid gainsboro;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="root">
+        <div class="main">
+            <div class="greeting">
+                <h2 id="f">Facebook</h2>
+                <p id="t">Facebook помогает вам всегда<br>оставаться на связи и общаться со<br>своими знакомыми</p>
+            </div>
+            <div class="reg">
+                <div class="regBox">
+                    <form class="form">
+                        <input type="text" id="email" placeholder="  электронный адрес и номер телефона" required>
+                        <input type="text" id="password" placeholder="  Пароль" required>
+                        <button id="login">Вход</button>
+                        <a href="#">Забыли пароль?</a>
+                        
+                        <hr>
+                        <button id="create">Создать аккаунт</button>
+                    </form>
+                    
+                </div>
+                
+                    <p id="txt"><strong>Создать страницу </strong> знаменитости, музыкальной группы<br> или компании</p>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p><span>Русский</span> <span>English (US)</span> <span>Türkçe</span> <span>Bahasa</span> <span>Indonesia
+                    中文(简体)</span> <span>Қазақша</span> <span>한국어</span></p>
+            <hr>
+            <p>
+                Регистрация Вход MessengerFacebook LiteВидео Места Игры MarketplaceMeta PayMeta StoreMeta QuestImagine
+                with
+                Meta AIInstagramThreads Благотворительные акции Услуги Центр информации о выборах Политика
+                конфиденциальности Центр конфиденциальности Группы Информация Создать рекламу Создать
+                Страницу Разработчикам Вакансии Файлы cookie Рекламные предпочтения Условия использования Справка
+                Загрузка
+                контактов и лица, не являющиеся пользователями Настройки Журнал действий
+            </p>
+            <p>Meta © 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
